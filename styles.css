@@ -1,0 +1,142 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align:center;
+}
+
+.calendar {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.calendar th, .calendar td {
+    border: 1px solid #ddd;
+    text-align: center;
+    padding: 8px;
+}
+
+.calendar th {
+    background-color: #f4f4f4;
+}
+
+.event {
+    margin-top: 5px;
+    padding: 5px;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 12px; /* Ajustar tamaño de fuente */
+    text-align: center; /* Centrar el texto */
+    word-wrap: break-word; /* Permite que las palabras largas se dividan */
+    overflow-wrap: break-word; /* Asegura compatibilidad con navegadores */
+    white-space: normal; /* Permite saltos de línea */
+    line-height: 1.2; /* Ajusta el espacio entre líneas */
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    text-align: center;
+}
+#modal-img{
+	width:100%;
+}
+#modal-txt{
+	width:100%;
+	height:200px;
+	overflow-y:scroll;
+	text-align:justify;
+	font-size:10px;
+}
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+}
+/* Asegura que la tabla ocupe todo el ancho del contenedor */
+.calendar {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+/* Estilo uniforme para las celdas */
+.calendar th,
+.calendar td {
+    width: 14.28%; /* 100% dividido entre 7 días */
+    text-align: center;
+    border: 1px solid #ccc; /* Añade bordes para mejor visibilidad */
+    padding: 10px;
+    vertical-align: top; /* Alinea el contenido al inicio de la celda */
+}
+
+/* Estilo para las filas de la cabecera */
+.calendar th {
+    background-color: #f4f4f4;
+    font-weight: bold;
+}
+
+/* Ajuste visual para los números de los días */
+.day-number {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+
+
+/* Contenedor del calendario para evitar desbordamiento */
+.calendar-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* Estilo adicional para el modal */
+.modal {
+    display: none; /* Oculto por defecto */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 500px;
+    width: 90%;
+    text-align: center;
+}
+
+.close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: bold;
+    color: #333;
+}
+
